@@ -78,9 +78,23 @@ Sergey-Hvostenko/
 
 ---
 
+## 📬 Direct Contact & Inquiries
+
+For architectural 3D visualization projects (Unreal Engine 5 / Lumion), AI video production, 3D concept art commissions, or fine art acquisitions and exhibitions:
+
+- **Email:** [hvostenkos@gmail.com](mailto:hvostenkos@gmail.com)
+- **WhatsApp:** [+972 54 612 3281](https://wa.me/972546123281)
+- **Telegram:** [+972 54 612 3281](https://t.me/+972546123281)
+- **Phone:** [+972 54 612 3281](tel:+972546123281)
+- **Facebook:** [facebook.com/hvostenkos](https://www.facebook.com/hvostenkos?locale=ru_RU)
+- **Flickr Portfolio:** [flickr.com/photos/141428959@N04/albums](https://www.flickr.com/photos/141428959@N04/albums)
+
+---
+
 ## 🔗 External Links
 
-- **Official Flickr Albums:** [flickr.com/photos/141428959@N04/albums](https://www.flickr.com/photos/141428959@N04/albums)
+- **Official Flickr Archive (500+ Works):** [flickr.com/photos/141428959@N04/albums](https://www.flickr.com/photos/141428959@N04/albums)
+- **Facebook Profile:** [facebook.com/hvostenkos](https://www.facebook.com/hvostenkos?locale=ru_RU)
 
 ---
 

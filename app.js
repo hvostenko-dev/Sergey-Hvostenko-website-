@@ -107,6 +107,15 @@
       contactLocValue: 'Ашдод, Израиль (работа по всему миру)',
       contactSpecLabel: 'Специализация',
       contactSpecValue: 'ArchViz (UE5/Lumion) · Живопись и графика · 3D & AI',
+      contactDirectTitle: 'Прямые каналы связи:',
+      channelChat: 'Чат →',
+      channelMsg: 'Написать →',
+      channelEmail: 'Написать →',
+      channelPhoneLabel: 'Телефон',
+      channelCall: 'Позвонить →',
+      channelProfile: 'Профиль →',
+      channelGallery: 'Альбомы →',
+      flickrBadgeCount: '500+ архивных работ',
       btnFlickr: 'Официальный профиль Flickr',
       formTitle: 'Отправить запрос на проект или картину',
       formNameLabel: 'Ваше имя',
@@ -116,8 +125,12 @@
       optAiVideo: 'AI-видео и генеративный контент',
       optConcept: '3D Концепт-арт и разработка игр',
       formMsgLabel: 'Сообщение',
-      formSubmitBtn: 'Скопировать готовый текст запроса',
-      formCopiedMsg: 'Текст вашего запроса скопирован в буфер обмена! Вы можете отправить его в мессенджер или на почту.',
+      formSubmitBtn: 'Отправить на hvostenkos@gmail.com',
+      formCopiedMsg: 'Запрос сформирован! Открываем почту, а текст скопирован в буфер обмена.',
+      cinemaBadge: 'Архитектурный видео-тур · 1080p Full HD',
+      btnPlayCinema: 'Запустить видео',
+      btnFlickrHd: 'Смотреть в 1080p на Flickr ↗',
+      videoSpecs: '1920×1080 Full HD · 60fps · Unreal Engine 5 / AI Motion',
       footerCopy: '© Сергей Хвостенко (Sergey Hvostenko). Все права на художественные работы и 3D-визуализации защищены.',
       backToTop: 'Наверх ↑',
       openOnFlickr: 'Открыть на Flickr'
@@ -230,6 +243,15 @@
       contactLocValue: 'Ashdod, Israel (Available Worldwide)',
       contactSpecLabel: 'Core Expertise',
       contactSpecValue: 'ArchViz (UE5/Lumion) · Fine Art & Graphics · 3D & AI',
+      contactDirectTitle: 'Direct Communication Channels:',
+      channelChat: 'Chat →',
+      channelMsg: 'Message →',
+      channelEmail: 'Send Email →',
+      channelPhoneLabel: 'Phone',
+      channelCall: 'Call →',
+      channelProfile: 'Profile →',
+      channelGallery: 'Albums →',
+      flickrBadgeCount: '500+ Archived Works',
       btnFlickr: 'Official Flickr Portfolio',
       formTitle: 'Project or Artwork Inquiry',
       formNameLabel: 'Your Name',
@@ -239,8 +261,12 @@
       optAiVideo: 'AI Video & Generative Motion',
       optConcept: '3D Concept Art & Game Development',
       formMsgLabel: 'Message',
-      formSubmitBtn: 'Copy Formatted Inquiry Message',
-      formCopiedMsg: 'Your inquiry message has been copied to the clipboard!',
+      formSubmitBtn: 'Send to hvostenkos@gmail.com',
+      formCopiedMsg: 'Inquiry prepared! Opening email client and copied text to clipboard.',
+      cinemaBadge: 'Architectural Cinema · 1080p Full HD',
+      btnPlayCinema: 'Play Video',
+      btnFlickrHd: 'Watch in 1080p on Flickr ↗',
+      videoSpecs: '1920×1080 Full HD · 60fps · Unreal Engine 5 / AI Motion',
       footerCopy: '© Sergey Hvostenko. All rights to artworks and 3D visualizations reserved.',
       backToTop: 'Back to top ↑',
       openOnFlickr: 'View Original on Flickr'
@@ -352,6 +378,15 @@
       contactLocValue: 'אשדוד, ישראל (עבודה מול לקוחות בארץ ובעולם)',
       contactSpecLabel: 'התמחות',
       contactSpecValue: 'הדמיות (UE5/Lumion) · ציור וגרפיקה · 3D & AI',
+      contactDirectTitle: 'ערוצי תקשורת ישירים:',
+      channelChat: 'צ׳אט ←',
+      channelMsg: 'שליחה ←',
+      channelEmail: 'אימייל ←',
+      channelPhoneLabel: 'טלפון',
+      channelCall: 'חיוג ←',
+      channelProfile: 'פרופיל ←',
+      channelGallery: 'אלבומים ←',
+      flickrBadgeCount: '500+ עבודות בארכיון',
       btnFlickr: 'תיק עבודות רשמי ב-Flickr',
       formTitle: 'שליחת פנייה לפרויקט או רכישת יצירה',
       formNameLabel: 'שם מלא',
@@ -361,8 +396,12 @@
       optAiVideo: 'וידאו AI ותוכן גנרטיבי',
       optConcept: 'קונספט ארט ב-3D ופיתוח משחקים',
       formMsgLabel: 'הודעה',
-      formSubmitBtn: 'העתקת נוסח פנייה מוכן',
-      formCopiedMsg: 'נוסח הפנייה הועתק ללוח! ניתן להדביק ולשלוח בוואטסאפ או באימייל.',
+      formSubmitBtn: 'שליחה ל-hvostenkos@gmail.com',
+      formCopiedMsg: 'הפנייה מוכנה! הלקוח נפתח והנוסח הועתק ללוח.',
+      cinemaBadge: 'סיור אדריכלי · 1080p Full HD',
+      btnPlayCinema: 'הפעלת וידאו',
+      btnFlickrHd: 'צפייה ב-Flickr ב-1080p ↗',
+      videoSpecs: '1920×1080 Full HD · 60fps · Unreal Engine 5 / AI Motion',
       footerCopy: '© סרגיי חבוסטנקו (Sergey Hvostenko). כל הזכויות על היצירות וההדמיות שמורות.',
       backToTop: 'חזרה למעלה ↑',
       openOnFlickr: 'צפייה במקור ב-Flickr'
@@ -539,7 +578,67 @@
     flickrLink.href = w.flickrUrl;
 
     if (w.mediaType === 'video' && w.embedUrl) {
-      stage.innerHTML = `<iframe src="${w.embedUrl}" allowfullscreen allow="autoplay; fullscreen"></iframe>`;
+      const badgeText = dict.cinemaBadge || 'Архитектурный видео-тур · 1080p Full HD';
+      const btnPlayText = dict.btnPlayCinema || 'Запустить видео';
+      const btnFlickrText = dict.btnFlickrHd || 'Смотреть в 1080p на Flickr ↗';
+      const techSpecs = dict.videoSpecs || '1920×1080 Full HD · 60fps · Unreal Engine 5 / AI Motion';
+
+      stage.innerHTML = `
+        <div class="video-theater-wrapper">
+          <div class="video-poster-box">
+            <img src="${w.localImage}" alt="${title}" class="video-theater-poster" id="theaterPosterImg" />
+            <div class="video-poster-overlay" id="theaterPosterOverlay">
+              <div class="video-badge-pill">
+                <span class="video-dot"></span>
+                <span>${badgeText}</span>
+              </div>
+              <button type="button" class="video-hero-play-btn" id="btnPlayTheater" aria-label="Play Video">
+                <svg viewBox="0 0 24 24" width="38" height="38" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"/>
+                </svg>
+              </button>
+              <div class="video-poster-details">
+                <span class="video-poster-tech">${techSpecs}</span>
+              </div>
+              <div class="video-theater-actions">
+                <button type="button" class="btn btn-gold btn-sm" id="btnPlayTheaterAction">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                  <span>${btnPlayText}</span>
+                </button>
+                <a href="${w.flickrUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <span>${btnFlickrText}</span>
+                </a>
+              </div>
+            </div>
+            <div class="video-iframe-slot" id="videoIframeSlot" style="display:none;">
+              <div class="video-loading-indicator" id="videoLoading">
+                <div class="spinner"></div>
+                <span>Загрузка видеоплеера...</span>
+              </div>
+              <iframe id="theaterIframe" src="" allowfullscreen allow="autoplay; fullscreen"></iframe>
+            </div>
+          </div>
+        </div>
+      `;
+
+      const startVideo = () => {
+        const overlay = document.getElementById('theaterPosterOverlay');
+        const slot = document.getElementById('videoIframeSlot');
+        const iframe = document.getElementById('theaterIframe');
+        const loading = document.getElementById('videoLoading');
+        if (!slot || !iframe) return;
+        if (overlay) overlay.style.display = 'none';
+        slot.style.display = 'block';
+        iframe.src = w.embedUrl;
+        iframe.onload = () => {
+          if (loading) loading.style.display = 'none';
+        };
+      };
+
+      const btn1 = document.getElementById('btnPlayTheater');
+      const btn2 = document.getElementById('btnPlayTheaterAction');
+      if (btn1) btn1.addEventListener('click', startVideo);
+      if (btn2) btn2.addEventListener('click', startVideo);
     } else {
       stage.innerHTML = `<img src="${w.localImage}" alt="${title}" />`;
     }
@@ -646,7 +745,7 @@
       if (e.key === 'ArrowRight') stepLightbox(1);
     });
 
-    // Contact form handler
+    // Contact form handler: opens mailto to hvostenkos@gmail.com and copies text with quick send
     const form = document.getElementById('contactForm');
     if (form) {
       form.addEventListener('submit', (e) => {
@@ -654,13 +753,39 @@
         const name = document.getElementById('inpName').value.trim();
         const topic = document.getElementById('inpTopic').value;
         const msg = document.getElementById('inpMsg').value.trim();
-        const text = `Hello Sergey Hvostenko!\nName: ${name}\nTopic: ${topic}\n\n${msg}`;
+        const subject = encodeURIComponent(`Запрос на проект: ${topic} — ${name}`);
+        const bodyText = `Здравствуйте, Сергей!\n\nМеня зовут: ${name}\nИнтересующее направление: ${topic}\n\nСообщение:\n${msg}\n\n—\nОтправлено с портфолио sergey-hvostenko.dev`;
+
+        // Copy to clipboard
         if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(text).catch(() => {});
+          navigator.clipboard.writeText(bodyText).catch(() => {});
         }
+
+        // Trigger mailto link
+        const mailtoUrl = `mailto:hvostenkos@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
+        window.location.href = mailtoUrl;
+
+        // Feedback card
         const fb = document.getElementById('formFeedback');
-        if (fb) {
-          fb.textContent = I18N[currentLang].formCopiedMsg;
+        const fbText = document.getElementById('feedbackText');
+        const fbActions = document.getElementById('feedbackActions');
+        if (fb && fbText && fbActions) {
+          const dict = I18N[currentLang];
+          fbText.innerHTML = `<strong>${dict.formCopiedMsg}</strong><br>Текст запроса скопирован. Вы также можете отправить его напрямую в мессенджер:`;
+          const waEncoded = encodeURIComponent(`Здравствуйте, Сергей! Меня зовут ${name}. Тема: ${topic}.\n${msg}`);
+          fbActions.innerHTML = `
+            <a href="https://wa.me/972546123281?text=${waEncoded}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-wa-accent">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.031 2C6.511 2 2.025 6.486 2.025 12.006c0 1.906.536 3.737 1.554 5.323L2 22l4.823-1.528a9.948 9.948 0 0 0 5.208 1.474h.005c5.518 0 10.005-4.486 10.005-10.006C22.041 6.486 17.552 2 12.031 2zm5.836 14.199c-.244.686-1.42 1.309-1.961 1.393-.52.08-1.196.113-3.847-.981-3.385-1.397-5.568-4.829-5.738-5.056-.169-.226-1.373-1.828-1.373-3.486 0-1.658.87-2.474 1.18-2.812.308-.339.674-.424.9-.424.225 0 .45.002.648.012.21.01.49-.08.766.584.282.686.96 2.343 1.045 2.512.084.17.141.368.028.593-.113.226-.17.367-.338.564-.17.198-.357.442-.51.593-.17.17-.348.354-.15.694.198.34 1.045 1.722 2.24 2.787 1.537 1.37 2.833 1.794 3.235 1.993.402.198.636.17.872-.1.236-.269 1.015-1.185 1.286-1.59.271-.406.542-.338.9-.203.36.136 2.287 1.078 2.682 1.275.395.198.658.297.754.462.096.166.096.962-.148 1.648z"/></svg>
+              <span>В WhatsApp</span>
+            </a>
+            <a href="https://t.me/+972546123281" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-tg-accent">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+              <span>В Telegram</span>
+            </a>
+            <a href="mailto:hvostenkos@gmail.com" class="btn btn-sm btn-outline">
+              <span>Открыть Почту</span>
+            </a>
+          `;
           fb.hidden = false;
         }
       });
