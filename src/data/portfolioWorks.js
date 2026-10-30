@@ -1,5 +1,5 @@
 // Auto-generated catalog of Sergey Hvostenko's works from Flickr (141428959@N04)
-window.PORTFOLIO_WORKS = [
+export const PORTFOLIO_WORKS = [
   {
     "id": "51621553489",
     "category": "fineart",

@@ -1,13 +1,13 @@
 # Sergey Hvostenko | Multidisciplinary Visual Artist & 3D ArchViz Studio
 
 [![Portfolio Status](https://img.shields.io/badge/Portfolio-Live_Ready-d4af7a?style=for-the-badge)](#)
+[![Stack](https://img.shields.io/badge/Stack-React_19_+_Vite-61dafb?style=for-the-badge)](#)
 [![Languages](https://img.shields.io/badge/Languages-RU_%7C_EN_%7C_HE_(RTL)-1e222e?style=for-the-badge)](#)
-[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero_(Pure_Node_%26_ES6)-2ea043?style=for-the-badge)](#)
 
 > **Official digital gallery, architectural visualization showcase, and career archive of Sergey Hvostenko** — Fine Artist (NAOMA Monumental Painting), Senior 3D Architectural Visualizer (Unreal Engine 5 / Lumion 2024), Game Art Director, and Generative AI Creator based in Ashdod, Israel.
 
 <p align="center">
-  <img src="assets/sergey-portrait.jpg" alt="Sergey Hvostenko" width="680" style="border-radius: 14px;" />
+  <img src="public/assets/sergey-portrait.jpg" alt="Sergey Hvostenko" width="680" style="border-radius: 14px;" />
 </p>
 
 ---
@@ -30,21 +30,22 @@
    - **3D Character & GameDev Concept Art (31 works):** High-polygon ZBrush character sculpting, fantasy creatures, and isometric game worlds.
    - **AI Video & Unreal Engine Animation (9 videos):** Real-time architectural walkthroughs and generative AI motion studies with embedded playback.
 2. **Full Trilingual Localization (`RU` / `EN` / `HE`):**
-   - Instant language switching without page reloads.
+   - Instant language switching powered by reactive state.
    - Native **Right-to-Left (`dir="rtl"`)** layout support for Hebrew (`עברית`).
-3. **Interactive Filtering, Live Search & Lightbox:**
+3. **Interactive Filtering, Live Search & Mobile-Optimized Lightbox:**
    - Filter by creative pillar or search across artwork titles and tools in real time.
-   - Full-screen Lightbox modal with keyboard navigation (`←`, `→`, `Esc`), embedded video player, and direct links to original Flickr albums.
-4. **Zero-Dependency Architecture:**
-   - Built with semantic HTML5, modern CSS Grid/Custom Properties (`Dark Museum & Studio` theme), vanilla ES6 JavaScript, and a built-in Node.js static server with automatic port fallback.
-   - Intentionally uses **zero third-party npm packages**, ensuring instant setup, zero vulnerabilities (`0 vulnerabilities`), and effortless deployment to GitHub Pages, Vercel, or Netlify.
+   - Full-screen Lightbox modal with keyboard navigation (`←`, `→`, `Esc`), mobile touch swipe gestures, embedded video player, and direct links to original Flickr albums.
+4. **Modern React 19 + Vite Architecture:**
+   - Component-driven modular design.
+   - Fast Hot Module Replacement (HMR) and optimized production build (`dist/`).
+   - Enhanced mobile navigation with slide-out drawer, touch targets, and responsive layouts.
 
 ---
 
 ## 🚀 Quick Start (Local Development)
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v16+ or v20+ recommended)
+- [Node.js](https://nodejs.org/) (v18+ or v20+ recommended)
 
 ### Run Locally
 ```bash
@@ -52,11 +53,18 @@
 git clone https://github.com/hvostenko-dev/Sergey-Hvostenko-website-.git
 cd Sergey-Hvostenko-website-
 
-# 2. Start the local development server
-npm run dev
-```
+# 2. Install dependencies
+npm install
 
-Open **http://localhost:4173** in your browser.
+# 3. Start development server
+npm run dev
+
+# 4. Build for production
+npm run build
+
+# 5. Preview production build
+npm run preview
+```
 
 ---
 
@@ -64,38 +72,36 @@ Open **http://localhost:4173** in your browser.
 
 ```text
 Sergey-Hvostenko/
-├── assets/
-│   ├── sergey-portrait.jpg   # Portrait of Sergey Hvostenko
-│   └── works/                # 92 high-resolution artworks & renders (.jpg)
-├── index.html                # Main single-page application layout
-├── styles.css                # Dark Museum & Studio styling + RTL support
-├── data.js                   # Structured trilingual catalog of all 92 works
-├── app.js                    # i18n engine (RU/EN/HE), live search, filters & Lightbox
-├── server.js                 # Zero-dependency Node.js HTTP server with port fallback
-├── package.json              # NPM scripts and project metadata
+├── public/
+│   └── assets/               # 92 high-resolution artworks, master portrait & media
+├── src/
+│   ├── components/           # Modular React components
+│   │   ├── Header.jsx        # Navbar, language switcher & mobile drawer
+│   │   ├── Hero.jsx          # Hero section with master portrait & Bento strip
+│   │   ├── Marquee.jsx       # Infinite ticker ribbon
+│   │   ├── Pillars.jsx       # 4 creative disciplines cards with filters
+│   │   ├── Portfolio.jsx     # Filter bar, search & artwork grid
+│   │   ├── ArtworkCard.jsx   # Individual artwork card
+│   │   ├── About.jsx         # Artist biography, skills & CV timeline
+│   │   ├── Games.jsx         # Shipped commercial game titles
+│   │   ├── Contact.jsx       # Direct channels & interactive inquiry form
+│   │   ├── Footer.jsx        # Footer & social links
+│   │   └── Lightbox.jsx      # Fullscreen modal with swipe & video player
+│   ├── data/
+│   │   ├── portfolioWorks.js # Catalog of 92 works
+│   │   └── translations.js   # RU / EN / HE dictionaries
+│   ├── styles.css            # Dark Museum & Studio theme + mobile styles
+│   ├── App.jsx               # Application root & reactive state
+│   └── main.jsx              # Vite React entry point
+├── index.html                # Vite HTML template with Google Fonts
+├── vite.config.js            # Vite configuration
+├── vercel.json               # Vercel deployment configuration
+├── package.json              # Project dependencies & scripts
 └── README.md                 # Project documentation
 ```
 
 ---
 
-## 📬 Direct Contact & Inquiries
+## 🌐 Deployment to Vercel
 
-For architectural 3D visualization projects (Unreal Engine 5 / Lumion), AI video production, 3D concept art commissions, or fine art acquisitions and exhibitions:
-
-- **Email:** [hvostenkos@gmail.com](mailto:hvostenkos@gmail.com)
-- **WhatsApp:** [+972 54 612 3281](https://wa.me/972546123281)
-- **Telegram:** [+972 54 612 3281](https://t.me/+972546123281)
-- **Phone:** [+972 54 612 3281](tel:+972546123281)
-- **Facebook:** [facebook.com/hvostenkos](https://www.facebook.com/hvostenkos?locale=ru_RU)
-- **Flickr Portfolio:** [flickr.com/photos/141428959@N04/albums](https://www.flickr.com/photos/141428959@N04/albums)
-
----
-
-## 🔗 External Links
-
-- **Official Flickr Archive (500+ Works):** [flickr.com/photos/141428959@N04/albums](https://www.flickr.com/photos/141428959@N04/albums)
-- **Facebook Profile:** [facebook.com/hvostenkos](https://www.facebook.com/hvostenkos?locale=ru_RU)
-
----
-
-© **Sergey Hvostenko**. All rights to artworks, paintings, 3D models, and architectural visualizations are reserved.
+Configured for automatic deployment on push to `main` via Vercel CLI or GitHub Integration. Build output is set to `dist/`.
