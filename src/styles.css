@@ -364,6 +364,7 @@ img {
   flex-direction: column;
   gap: 16px;
   min-width: 0;
+  width: 100%;
 }
 
 .artist-showcase {
@@ -374,15 +375,14 @@ img {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.04);
   display: flex;
   flex-direction: column;
-  max-width: 480px;
   width: 100%;
 }
 
 .artist-portrait-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  max-height: 330px;
+  aspect-ratio: 16 / 10;
+  max-height: 350px;
   background: var(--bg-surface);
   overflow: hidden;
 }
@@ -1955,14 +1955,14 @@ img {
     border-radius: var(--radius-md);
     border: 1px solid rgba(212, 175, 122, 0.28);
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
-    max-width: 380px;
     width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
   }
 
   .artist-portrait-wrap {
-    aspect-ratio: 4 / 3;
-    max-height: 240px;
+    aspect-ratio: 16 / 10;
+    max-height: 250px;
     width: 100%;
     height: auto;
     background: var(--bg-surface);
@@ -2363,7 +2363,8 @@ img {
   }
 
   .artist-portrait-wrap {
-    max-height: 200px;
+    aspect-ratio: 16 / 10;
+    max-height: 220px;
   }
 
   .lightbox-stage {
