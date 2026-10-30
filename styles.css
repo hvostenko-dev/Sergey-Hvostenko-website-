@@ -34,12 +34,15 @@ html {
   color: var(--text-primary);
   font-family: var(--font-sans);
   line-height: 1.6;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
   background-color: var(--bg-deep);
   color: var(--text-primary);
   overflow-x: hidden;
+  max-width: 100%;
   position: relative;
 }
 
@@ -1697,7 +1700,11 @@ img {
 
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1100px) {
-  .hero-grid,
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
   .about-grid,
   .contact-card {
     grid-template-columns: 1fr;
@@ -1706,153 +1713,328 @@ img {
   .pillars-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .artist-showcase {
+    max-height: 440px;
+    min-height: unset;
+  }
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .site-header {
+    padding: 0;
+  }
+
+  .header-inner {
+    height: auto;
+    min-height: 62px;
+    padding: 10px 0 8px;
+    gap: 12px;
+  }
+
   .main-nav {
     display: none;
   }
 
-  .header-inner {
-    flex-wrap: wrap;
-    padding: 10px 0;
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-mark {
+    font-size: 1.25rem;
+    padding: 2px 8px;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .lang-btn {
+    padding: 4px 9px;
+    font-size: 0.76rem;
+  }
+
+  .header-actions .btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
   }
 
   .mobile-nav-bar {
     display: flex;
+    width: 100%;
+    order: 3;
+    padding: 6px 0 2px;
+    margin-top: 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    gap: 8px;
   }
 
   .hero-section {
-    padding-top: 20px;
+    padding: 32px 0 48px;
   }
 
-  .hero-portrait-card {
-    max-width: 320px;
-    margin: 0 auto 24px;
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .eyebrow-badge {
+    margin-bottom: 16px;
+    font-size: 0.78rem;
+    padding: 4px 12px;
+  }
+
+  .hero-title-main {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+    line-height: 1.1;
+  }
+
+  .hero-title-sub {
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .hero-lead {
+    font-size: 0.94rem;
+    margin-bottom: 18px;
+  }
+
+  .hero-quote {
+    padding: 8px 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero-quote p {
+    font-size: 1.02rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    padding-top: 20px;
   }
 
-  .bento-showcase {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  .stat-num {
+    font-size: 1.7rem;
   }
 
-  .bento-main {
-    grid-row: auto;
-    height: 280px;
+  .stat-label {
+    font-size: 0.74rem;
+  }
+
+  .artist-showcase {
+    aspect-ratio: 16 / 10;
+    min-height: unset;
+    max-height: 360px;
+  }
+
+  .artist-portrait-gradient {
+    padding: 24px 18px 16px;
+  }
+
+  .artist-portrait-meta strong {
+    font-size: 1.35rem;
+  }
+
+  .artist-portrait-meta span {
+    font-size: 0.8rem;
+  }
+
+  .hero-works-strip {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .hero-works-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .strip-card {
+    flex: 0 0 170px;
+    height: 120px;
+  }
+
+  .pillars-section,
+  .portfolio-section,
+  .about-section,
+  .games-section {
+    padding: 56px 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 6vw, 2.3rem);
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
   }
 
   .pillars-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
-  .contact-card {
-    padding: 28px 20px;
+  .pillar-card {
+    padding: 24px 18px;
   }
 
-  .contact-badges {
-    grid-template-columns: 1fr;
+  .portfolio-header {
+    gap: 18px;
+    margin-bottom: 28px;
   }
 
-  .contact-channels-grid {
-    grid-template-columns: 1fr;
+  .portfolio-title-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
   }
 
-  .lightbox-stage {
-    height: 60vh;
+  .search-box {
+    max-width: 100%;
+    width: 100%;
   }
 
-  .video-hero-play-btn {
-    width: 68px;
-    height: 68px;
-  }
-
-  .video-poster-overlay {
-    padding: 16px;
+  .about-mini-profile {
+    width: 100%;
+    padding: 6px 14px 6px 6px;
     gap: 12px;
   }
 
-  .lightbox-close {
-    top: -10px;
-    right: -10px;
-    width: 40px;
-    height: 40px;
+  .about-mini-avatar {
+    width: 46px;
+    height: 46px;
   }
 
-  .lightbox-nav {
-    width: 40px;
-    height: 40px;
-    font-size: 1.4rem;
+  .filter-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding: 4px 0 10px;
+    scrollbar-width: none;
   }
 
-  .lightbox-meta {
-    flex-direction: column;
-    align-items: flex-start;
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
   }
 
-  .footer-inner {
-    flex-direction: column;
-    text-align: center;
-    gap: 18px;
-  }
-
-  .footer-left {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .site-header {
-    padding: 6px 0;
-  }
-
-  .brand-name {
-    font-size: 1.05rem;
-  }
-
-  .hero-title-main {
-    font-size: 2.3rem;
-  }
-
-  .hero-title-sub {
-    font-size: 1.1rem;
-  }
-
-  .hero-lead {
-    font-size: 0.95rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-actions .btn {
-    width: 100%;
-  }
-
-  .hero-stats {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .stat-card {
-    padding: 14px;
-  }
-
-  .stat-num {
-    font-size: 1.6rem;
+  .filter-tab {
+    flex-shrink: 0;
+    padding: 8px 14px;
+    font-size: 0.82rem;
   }
 
   .gallery-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .work-info {
+    padding: 14px 16px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .bio-text {
+    font-size: 0.96rem;
+    margin-bottom: 24px;
+  }
+
+  .skills-box {
+    padding: 20px 16px;
+  }
+
+  .timeline-heading {
+    font-size: 1.4rem;
+  }
+
+  .timeline-list {
+    padding-inline-start: 18px;
+    gap: 16px;
+  }
+
+  .timeline-item {
+    padding: 16px;
+  }
+
+  .timeline-item::before {
+    inset-inline-start: -25px;
+    width: 10px;
+    height: 10px;
+    top: 20px;
+  }
+
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .game-card {
+    padding: 18px 16px;
+  }
+
+  .contact-section {
+    padding: 48px 0 64px;
   }
 
   .contact-card {
-    padding: 22px 14px;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .contact-desc {
+    font-size: 0.94rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-badges {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contact-channels-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .channel-card {
+    padding: 12px 14px;
+  }
+
+  .contact-form {
+    padding: 22px 16px;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
   }
 
   .feedback-quick-actions {
@@ -1861,9 +2043,148 @@ img {
 
   .feedback-quick-actions .btn {
     width: 100%;
+    justify-content: center;
+  }
+
+  /* LIGHTBOX ON MOBILE */
+  .lightbox-content {
+    width: 95vw;
+    gap: 10px;
   }
 
   .lightbox-stage {
-    height: 52vh;
+    height: 54vh;
+    min-height: 250px;
+  }
+
+  .lightbox-close {
+    top: -10px;
+    right: -6px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.4rem;
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+
+  .lightbox-meta {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .lightbox-title {
+    font-size: 1.02rem;
+  }
+
+  .lightbox-sub {
+    font-size: 0.8rem;
+  }
+
+  .lightbox-meta-actions {
+    width: 100%;
+  }
+
+  .lightbox-meta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .video-hero-play-btn {
+    width: 62px;
+    height: 62px;
+  }
+
+  .video-poster-overlay {
+    padding: 16px 12px;
+    gap: 12px;
+  }
+
+  .video-badge-pill {
+    font-size: 0.74rem;
+    padding: 4px 12px;
+  }
+
+  .video-theater-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .video-theater-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* FOOTER ON MOBILE */
+  .site-footer {
+    padding: 28px 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-copy {
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .footer-channels {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+  .hero-title-main {
+    font-size: 2.1rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .lightbox-stage {
+    height: 48vh;
   }
 }
