@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sergey Hvostenko — Multidisciplinary Artist, 3D Visualizer & Art Director</title>
+  <meta name="description" content="Official portfolio of Sergey Hvostenko: Fine Art Painting & Graphics, Unreal Engine 5 & Lumion Architectural Visualization, 3D Character Concept Art & AI Motion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Subtle ambient background glow -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Sergey Hvostenko Home">
+        <span class="brand-mark">SH</span>
+        <span class="brand-divider"></span>
+        <span class="brand-name" data-i18n="brandName">Сергей Хвостенко</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#portfolio" class="nav-link" data-i18n="navPortfolio">Галерея работ</a>
+        <a href="#pillars" class="nav-link" data-i18n="navDirections">Направления</a>
+        <a href="#about" class="nav-link" data-i18n="navAbout">Биография и CV</a>
+        <a href="#games" class="nav-link" data-i18n="navGames">Игровые проекты</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="he">עב</button>
+        </div>
+        <a href="#contact" class="btn btn-gold btn-sm" data-i18n="headerCta">Связаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow-badge">
+            <span class="dot"></span>
+            <span data-i18n="heroLocation">Ашдод, Израиль · Творчество без границ</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-main" data-i18n="heroTitleMain">Сергей Хвостенко</span>
+            <span class="hero-title-sub" data-i18n="heroTitleSub">Живописец · Архитектурный 3D-визуализатор · Арт-директор</span>
+          </h1>
+
+          <p class="hero-lead" data-i18n="heroLead">
+            Уникальный синтез классической школы монументальной живописи (НАОМА) и передовых цифровых технологий: от экспрессивных полотен и графики до фотореалистичной архитектуры в Unreal Engine 5, скульптинга в ZBrush и генеративной AI-анимации.
+          </p>
+
+          <blockquote class="hero-quote">
+            <p data-i18n="heroQuoteText">«Искусство — это диалог со светом, пространством и временем, будь то мазок акрила на холсте или луч света в виртуальной архитектуре».</p>
+          </blockquote>
+
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-gold">
+              <span data-i18n="heroBtnExplore">Смотреть портфолио (92 работы)</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#about" class="btn btn-outline" data-i18n="heroBtnBio">О художнике и резюме</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">30+</span>
+              <span class="stat-label" data-i18n="statYears">лет в искусстве и дизайне</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">4</span>
+              <span class="stat-label" data-i18n="statDomains">творческих направления</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">7+</span>
+              <span class="stat-label" data-i18n="statGames">выпущенных игр (Art Director)</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">92</span>
+              <span class="stat-label" data-i18n="statWorks">работы в цифровом каталоге</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase with Master Portrait -->
+        <div class="hero-visual">
+          <div class="artist-showcase">
+            <img src="assets/sergey-portrait.jpg" alt="Сергей Хвостенко (Sergey Hvostenko)" class="artist-portrait-img" />
+            <div class="artist-portrait-gradient">
+              <div class="artist-portrait-meta">
+                <strong data-i18n="portraitName">Сергей Хвостенко</strong>
+                <span data-i18n="portraitCredentials">Специалист монументальной живописи (НАОМА) · Senior 3D & AI Artist</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 Featured Works Mini-Strip -->
+          <div class="hero-works-strip">
+            <div class="bento-card strip-card" data-open-id="51621553489">
+              <img src="assets/works/51621553489.jpg" alt="Yellow Nostalgia — Sergey Hvostenko" />
+              <div class="bento-caption">
+                <span class="bento-tag" data-i18n="tagFineArt">Авторская живопись</span>
+                <strong>Yellow Nostalgia</strong>
+              </div>
+            </div>
+            <div class="bento-card strip-card" data-open-id="54121574698">
+              <img src="assets/works/54121574698.jpg" alt="Studio Effy Kwina Unreal Engine 5 Render" />
+              <div class="bento-caption">
+                <span class="bento-tag">Unreal Engine 5</span>
+                <strong data-i18n="bentoArchTitle">Studio Effy Kwina</strong>
+              </div>
+            </div>
+            <div class="bento-card strip-card" data-open-id="26058499803">
+              <img src="assets/works/26058499803.jpg" alt="3D Character ZBrush Concept" />
+              <div class="bento-caption">
+                <span class="bento-tag">ZBrush 3D</span>
+                <strong data-i18n="bento3dTitle">3D-Концепт</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFINITE TICKER RIBBON -->
+    <div class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FINE ART PAINTING & GRAPHICS</span><span class="sep">✦</span>
+        <span>UNREAL ENGINE 5 ARCHVIZ</span><span class="sep">✦</span>
+        <span>LUMION 2024</span><span class="sep">✦</span>
+        <span>ZBRUSH 3D SCULPTING</span><span class="sep">✦</span>
+        <span>AI VIDEO & MOTION GENERATION</span><span class="sep">✦</span>
+        <span>GAME ART DIRECTION</span><span class="sep">✦</span>
+        <span>NAOMA MONUMENTAL ART</span><span class="sep">✦</span>
+        <span>ASHDOD, ISRAEL</span><span class="sep">✦</span>
+        <span>FINE ART PAINTING & GRAPHICS</span><span class="sep">✦</span>
+        <span>UNREAL ENGINE 5 ARCHVIZ</span><span class="sep">✦</span>
+        <span>LUMION 2024</span><span class="sep">✦</span>
+        <span>ZBRUSH 3D SCULPTING</span><span class="sep">✦</span>
+        <span>AI VIDEO & MOTION GENERATION</span><span class="sep">✦</span>
+        <span>GAME ART DIRECTION</span><span class="sep">✦</span>
+      </div>
+    </div>
+
+    <!-- 4 CREATIVE PILLARS SECTION -->
+    <section class="pillars-section" id="pillars">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="pillarsKicker">Мультидисциплинарное мастерство</span>
+          <h2 class="section-title" data-i18n="pillarsTitle">Четыре грани творчества</h2>
+          <p class="section-subtitle" data-i18n="pillarsSubtitle">
+            Нажмите на любое направление, чтобы отфильтровать галерею и изучить работы в деталях.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card" data-filter-trigger="fineart">
+            <div class="pillar-img-wrap">
+              <img src="assets/works/26934799180.jpg" alt="Fine Art Painting & Graphics" loading="lazy" />
+              <span class="pillar-count">25 <span data-i18n="worksWord">работ</span></span>
+            </div>
+            <div class="pillar-body">
+              <h3 data-i18n="pillar1Title">Станковая живопись и авторская графика</h3>
+              <p data-i18n="pillar1Desc">
+                Холст, акрил, масло, гуашь и авторская графика. Символизм, неоэкспрессионизм и тонкая философская ирония. Участник выставок современного искусства в Израиле.
+              </p>
+              <span class="pillar-link" data-i18n="pillarExplore">Открыть коллекцию →</span>
+            </div>
+          </article>
+
+          <article class="pillar-card" data-filter-trigger="archviz">
+            <div class="pillar-img-wrap">
+              <img src="assets/works/54432823812.jpg" alt="Architectural Visualization Unreal Engine & Lumion" loading="lazy" />
+              <span class="pillar-count">27 <span data-i18n="worksWord">работ</span></span>
+            </div>
+            <div class="pillar-body">
+              <h3 data-i18n="pillar2Title">Архитектура и интерьеры (Unreal Engine & Lumion)</h3>
+              <p data-i18n="pillar2Desc">
+                Фотореалистичная визуализация частных резиденций, пентхаусов и общественных пространств в Израиле (многолетнее сотрудничество с бюро EFFY KWINA Architecture Design и Mar Design).
+              </p>
+              <span class="pillar-link" data-i18n="pillarExplore">Открыть коллекцию →</span>
+            </div>
+          </article>
+
+          <article class="pillar-card" data-filter-trigger="concept3d">
+            <div class="pillar-img-wrap">
+              <img src="assets/works/26597245211.jpg" alt="3D Character & GameDev Concept Art" loading="lazy" />
+              <span class="pillar-count">31 <span data-i18n="worksWord">работа</span></span>
+            </div>
+            <div class="pillar-body">
+              <h3 data-i18n="pillar3Title">3D-концепт-арт, персонажи и GameDev</h3>
+              <p data-i18n="pillar3Desc">
+                Высокополигональный скульптинг в ZBrush, моделирование персонажей, фэнтези-существ, игровых локаций и арт-дирекшн проектов для Alawar, Absolutist, Rin Games и Fenix-Soft.
+              </p>
+              <span class="pillar-link" data-i18n="pillarExplore">Открыть коллекцию →</span>
+            </div>
+          </article>
+
+          <article class="pillar-card" data-filter-trigger="aimotion">
+            <div class="pillar-img-wrap">
+              <img src="assets/works/55370871827.jpg" alt="AI Video & Unreal Engine Animation" loading="lazy" />
+              <span class="pillar-count">9 <span data-i18n="videosWord">видео</span></span>
+            </div>
+            <div class="pillar-body">
+              <h3 data-i18n="pillar4Title">AI-видео и анимация в Unreal Engine</h3>
+              <p data-i18n="pillar4Desc">
+                Кинематографичные видеопролеты камер в реальном времени (Unreal Engine) и новейшие эксперименты с генеративным искусственным интеллектом, оживляющим архитектурные пространства.
+              </p>
+              <span class="pillar-link" data-i18n="pillarExplore">Смотреть видеоработы →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN INTERACTIVE PORTFOLIO GALLERY -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="portfolio-header">
+          <div class="portfolio-title-row">
+            <div>
+              <span class="section-kicker" data-i18n="galleryKicker">Полный архив работ</span>
+              <h2 class="section-title" data-i18n="galleryTitle">Галерея произведений и проектов</h2>
+            </div>
+            <div class="search-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              <input type="search" id="searchInput" placeholder="Поиск по работам (например: Effy Kwina, облака, ZBrush)..." data-i18n-placeholder="searchPlaceholder" />
+            </div>
+          </div>
+
+          <!-- Filter Controls -->
+          <div class="gallery-controls">
+            <div class="filter-tabs" role="tablist" aria-label="Portfolio Categories">
+              <button type="button" class="filter-tab active" data-filter="featured">
+                <span data-i18n="filterFeatured">Избранное</span>
+                <span class="tab-badge" id="count-featured">18</span>
+              </button>
+              <button type="button" class="filter-tab" data-filter="all">
+                <span data-i18n="filterAll">Все работы</span>
+                <span class="tab-badge" id="count-all">92</span>
+              </button>
+              <button type="button" class="filter-tab" data-filter="fineart">
+                <span data-i18n="filterFineArt">Живопись и графика</span>
+                <span class="tab-badge" id="count-fineart">25</span>
+              </button>
+              <button type="button" class="filter-tab" data-filter="archviz">
+                <span data-i18n="filterArchViz">Архитектура (UE5 / Lumion)</span>
+                <span class="tab-badge" id="count-archviz">27</span>
+              </button>
+              <button type="button" class="filter-tab" data-filter="concept3d">
+                <span data-i18n="filterConcept3d">3D Концепт-арт и Персонажи</span>
+                <span class="tab-badge" id="count-concept3d">31</span>
+              </button>
+              <button type="button" class="filter-tab" data-filter="aimotion">
+                <span data-i18n="filterAiMotion">AI & Видео-анимация</span>
+                <span class="tab-badge" id="count-aimotion">9</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT & BIOGRAPHY / CV TIMELINE -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left column: Bio & Philosophy -->
+          <div class="about-bio">
+            <span class="section-kicker" data-i18n="aboutKicker">Биография и путь мастера</span>
+            <h2 class="section-title" data-i18n="aboutTitle">О художнике: от монументальной живописи до виртуальных миров</h2>
+
+            <div class="about-mini-profile">
+              <img src="assets/sergey-portrait.jpg" alt="Сергей Хвостенко" class="about-mini-avatar" loading="lazy" />
+              <div>
+                <strong data-i18n="portraitName">Сергей Хвостенко</strong>
+                <p data-i18n="aboutMiniSub">Род. 1 мая 1970 г. · Ашдод, Израиль</p>
+              </div>
+            </div>
+
+            <div class="bio-text">
+              <p data-i18n="bioP1">
+                <strong>Сергей Хвостенко</strong> родился 1 мая 1970 года. Получил фундаментальное классическое художественное образование: окончил <strong>Днепропетровское государственное художественное училище им. Е. В. Вучетича</strong>, а затем — <strong>Национальную академию изобразительного искусства и архитектуры (НАОМА) в Киеве</strong> по специальности «Монументальная живопись».
+              </p>
+              <p data-i18n="bioP2">
+                До 2003 года работал как свободный художник и педагог, преподавал в художественном училище. С 2003 года активно занимается проектированием интерьеров, экстерьеров и компьютерной 3D-визуализацией.
+              </p>
+              <p data-i18n="bioP3">
+                С 2013 года живет и творит в <strong>г. Ашдод, Израиль</strong>. Сочетает работу ведущего визуализатора в израильском архитектурном бюро <strong>EFFY KWINA Architecture Design</strong> со станковой живописью, авторской графикой и генеративным медиа-артом.
+              </p>
+            </div>
+
+            <!-- Software & Tools Arsenal -->
+            <div class="skills-box">
+              <h3 class="skills-title" data-i18n="skillsHeading">Профессиональный стек и инструменты</h3>
+              <div class="skills-tags">
+                <span class="skill-chip highlight">Unreal Engine 5</span>
+                <span class="skill-chip highlight">Lumion 2024</span>
+                <span class="skill-chip highlight">3ds Max</span>
+                <span class="skill-chip highlight">ZBrush</span>
+                <span class="skill-chip highlight">AI Video & Image Gen</span>
+                <span class="skill-chip">Rhino</span>
+                <span class="skill-chip">SketchUp</span>
+                <span class="skill-chip">TopoGun</span>
+                <span class="skill-chip">SpeedTree</span>
+                <span class="skill-chip">Adobe Photoshop</span>
+                <span class="skill-chip">Corel Painter</span>
+                <span class="skill-chip">Adobe After Effects</span>
+                <span class="skill-chip">DaVinci Resolve</span>
+                <span class="skill-chip">Poser</span>
+                <span class="skill-chip" data-i18n="skillFineArt">Холст / Акрил / Масло / Гуашь</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column: Career Timeline -->
+          <div class="about-timeline">
+            <h3 class="timeline-heading" data-i18n="timelineHeading">Хронология карьеры и образования</h3>
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <span class="timeline-year" data-i18n="tlNowYear">2013 — Наст. время</span>
+                <h4 class="timeline-role" data-i18n="tlNowRole">Ведущий 3D-визуализатор и художник (Ашдод, Израиль)</h4>
+                <p class="timeline-org">EFFY KWINA Architecture Design · Mar Design (2015–2019)</p>
+                <p class="timeline-desc" data-i18n="tlNowDesc">
+                  Создание фотореалистичных архитектурных рендеров и кинематографичных анимаций в Unreal Engine и Lumion 2024, генеративный AI-видеоарт, участие в выставках живописи и графики.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-year">2014 — 2018</span>
+                <h4 class="timeline-role" data-i18n="tlFenixRole">Ведущий концепт-художник (Strategy Games)</h4>
+                <p class="timeline-org">Fenix-Soft</p>
+                <p class="timeline-desc" data-i18n="tlFenixDesc">
+                  Разработка визуального мира, персонажей и архитектуры для стратегических игр «Наследие древних», «Игра королей» и «Третий мир».
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-year">2013 — 2018</span>
+                <h4 class="timeline-role" data-i18n="tlRinRole">Арт-директор (Art Director)</h4>
+                <p class="timeline-org">Rin Games (продюсирование Alawar) & Absolutist (2013–2015)</p>
+                <p class="timeline-desc" data-i18n="tlRinDesc">
+                  Художественное руководство проектами по созданию казуальных и мобильных игр от концепта до релиза в App Store, Google Play и Big Fish Games.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-year">2008 — 2013</span>
+                <h4 class="timeline-role" data-i18n="tlButterflyRole">Концепт-художник и 3D-моделер</h4>
+                <p class="timeline-org">Butterfly iSoft</p>
+                <p class="timeline-desc" data-i18n="tlButterflyDesc">
+                  Создание 2D/3D концепт-арта, игровых локаций, персонажей и текстур.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-year">2003 — 2008</span>
+                <h4 class="timeline-role" data-i18n="tlInteriorRole">Дизайнер интерьеров и экстерьеров, 3D-визуализатор</h4>
+                <p class="timeline-org" data-i18n="tlInteriorOrg">Частная архитектурная практика</p>
+                <p class="timeline-desc" data-i18n="tlInteriorDesc">
+                  Проектирование жилых и общественных пространств и их компьютерная визуализация.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-year">1989 — 2003</span>
+                <h4 class="timeline-role" data-i18n="tlEduRole">Академическое образование и преподавание</h4>
+                <p class="timeline-org" data-i18n="tlEduOrg">ДХУ им. Е. В. Вучетича · НАОМА (Киев, факультет монументальной живописи)</p>
+                <p class="timeline-desc" data-i18n="tlEduDesc">
+                  Диплом специалиста монументальной живописи. Свободный художник и преподаватель в художественном училище.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHIPPED GAMES & ART DIRECTION SECTION -->
+    <section class="games-section" id="games">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="gamesKicker">GameDev & Art Direction</span>
+          <h2 class="section-title" data-i18n="gamesTitle">Игровые проекты под руководством Сергея Хвостенко</h2>
+          <p class="section-subtitle" data-i18n="gamesSubtitle">
+            Игры, созданные в роли арт-директора и ведущего концепт-художника совместно с Alawar, Big Fish Games, Rin Games, Absolutist и Fenix-Soft.
+          </p>
+        </div>
+
+        <div class="games-grid">
+          <div class="game-card">
+            <span class="game-year">2010</span>
+            <h3 class="game-title">Gourmania 2: Great Expectations</h3>
+            <p class="game-pub">Alawar / Big Fish Games</p>
+            <p class="game-role" data-i18n="gameRoleConcept">Арт-дирекшн, локации и графика</p>
+          </div>
+          <div class="game-card">
+            <span class="game-year">2012</span>
+            <h3 class="game-title">Natural Threat: Ominous Shores</h3>
+            <p class="game-pub">Alawar / Big Fish Games</p>
+            <p class="game-role" data-i18n="gameRoleArtDir">Арт-директор и концепт-художник</p>
+          </div>
+          <div class="game-card">
+            <span class="game-year">2013</span>
+            <h3 class="game-title">Natural Threat 2</h3>
+            <p class="game-pub">Rin Games / Big Fish Games</p>
+            <p class="game-role" data-i18n="gameRoleArtDir">Арт-директор и концепт-художник</p>
+          </div>
+          <div class="game-card">
+            <span class="game-year">2013</span>
+            <h3 class="game-title">Zeus Defense</h3>
+            <p class="game-pub">iOS / App Store (Alawar)</p>
+            <p class="game-role" data-i18n="gameRoleArtDir">Арт-директор проекта</p>
+          </div>
+          <div class="game-card">
+            <span class="game-year">2014</span>
+            <h3 class="game-title">Fantastic Team (Fantastic Runner)</h3>
+            <p class="game-pub">Rin Games (Google Play)</p>
+            <p class="game-role" data-i18n="gameRoleArtDir">Арт-директор проекта</p>
+          </div>
+          <div class="game-card">
+            <span class="game-year">2015</span>
+            <h3 class="game-title">Twilight Town & Time Gap</h3>
+            <p class="game-pub">Absolutist Games</p>
+            <p class="game-role" data-i18n="gameRoleConceptLead">Ведущий концепт-художник</p>
+          </div>
+          <div class="game-card">
+            <span class="game-year">2014–2018</span>
+            <h3 class="game-title" data-i18n="gameFenixTitle">«Наследие древних», «Игра королей», «Третий мир»</h3>
+            <p class="game-pub">Fenix-Soft (Strategy)</p>
+            <p class="game-role" data-i18n="gameRoleConceptLead">Ведущий концепт-художник</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & INQUIRY SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <span class="section-kicker" data-i18n="contactKicker">Сотрудничество и приобретение работ</span>
+            <h2 class="section-title" data-i18n="contactTitle">Свяжитесь с Сергеем Хвостенко</h2>
+            <p class="contact-desc" data-i18n="contactDesc">
+              Открыт для предложений по архитектурной 3D-визуализации (Unreal Engine 5 / Lumion), AI-видеопродакшну, концепт-арту, а также по вопросам приобретения картин, графики и участия в выставках.
+            </p>
+
+            <div class="contact-badges">
+              <div class="c-badge">
+                <span class="c-label" data-i18n="contactLocLabel">Локация</span>
+                <strong data-i18n="contactLocValue">Ашдод, Израиль (работа по всему миру)</strong>
+              </div>
+              <div class="c-badge">
+                <span class="c-label" data-i18n="contactSpecLabel">Специализация</span>
+                <strong data-i18n="contactSpecValue">ArchViz (UE5/Lumion) · Живопись · 3D & AI</strong>
+              </div>
+            </div>
+
+            <div class="external-links">
+              <a href="https://www.flickr.com/photos/141428959@N04/albums" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+                <span data-i18n="btnFlickr">Официальный профиль Flickr</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Message Builder -->
+          <form class="contact-form" id="contactForm">
+            <h3 class="form-title" data-i18n="formTitle">Отправить запрос на проект или картину</h3>
+            <div class="form-group">
+              <label for="inpName" data-i18n="formNameLabel">Ваше имя</label>
+              <input type="text" id="inpName" required placeholder="Alex / Александр" />
+            </div>
+            <div class="form-group">
+              <label for="inpTopic" data-i18n="formTopicLabel">Интересующее направление</label>
+              <select id="inpTopic">
+                <option value="ArchViz (Unreal Engine / Lumion)" data-i18n="optArchViz">Архитектурная 3D-визуализация и анимация</option>
+                <option value="Fine Art / Painting" data-i18n="optFineArt">Приобретение картины / графики / Выставки</option>
+                <option value="AI Video & Motion" data-i18n="optAiVideo">AI-видео и генеративный контент</option>
+                <option value="3D Concept Art & GameDev" data-i18n="optConcept">3D Концепт-арт и разработка игр</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inpMsg" data-i18n="formMsgLabel">Сообщение</label>
+              <textarea id="inpMsg" rows="4" required placeholder="Опишите ваш проект или укажите название понравившейся работы..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full" data-i18n="formSubmitBtn">Скопировать готовый текст запроса</button>
+            <p class="form-note" id="formFeedback" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-mark">SH</span>
+        <span class="footer-copy" data-i18n="footerCopy">© Сергей Хвостенко (Sergey Hvostenko). Все права на художественные работы и 3D-визуализации защищены.</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.flickr.com/photos/141428959@N04/albums" target="_blank" rel="noopener noreferrer">Flickr Albums</a>
+        <a href="#top" data-i18n="backToTop">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR IMAGES & VIDEOS -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+      <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous artwork">‹</button>
+      <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next artwork">›</button>
+
+      <div class="lightbox-stage" id="lightboxStage"></div>
+
+      <div class="lightbox-meta">
+        <div class="lightbox-meta-text">
+          <span class="lightbox-cat" id="lightboxCat"></span>
+          <h3 class="lightbox-title" id="lightboxTitle"></h3>
+          <p class="lightbox-sub" id="lightboxSub"></p>
+        </div>
+        <div class="lightbox-meta-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="lightboxFlickrLink">
+            <span data-i18n="openOnFlickr">Открыть оригинал на Flickr</span> ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

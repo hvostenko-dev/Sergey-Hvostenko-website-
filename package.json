@@ -1,0 +1,21 @@
+{
+  "name": "sergey-hvostenko-portfolio",
+  "version": "1.0.0",
+  "description": "Official multidisciplinary portfolio of Sergey Hvostenko (HVOST): Fine Art, Unreal Engine 5 & Lumion ArchViz, 3D Concept Art & AI Video",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "sergey-hvostenko",
+    "hvost",
+    "fine-art",
+    "archviz",
+    "unreal-engine",
+    "3d-concept-art"
+  ],
+  "author": "Sergey Hvostenko",
+  "license": "ISC"
+}
