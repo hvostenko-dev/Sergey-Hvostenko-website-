@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
   <!-- Subtle ambient background glow -->
@@ -104,12 +104,19 @@
         <!-- Hero Visual Showcase with Master Portrait -->
         <div class="hero-visual">
           <div class="artist-showcase">
-            <img src="assets/sergey-portrait.jpg" alt="Сергей Хвостенко (Sergey Hvostenko)" class="artist-portrait-img" />
-            <div class="artist-portrait-gradient">
-              <div class="artist-portrait-meta">
-                <strong data-i18n="portraitName">Сергей Хвостенко</strong>
-                <span data-i18n="portraitCredentials">Специалист монументальной живописи (НАОМА) · Senior 3D & AI Artist</span>
+            <div class="artist-portrait-wrap">
+              <img src="assets/sergey-portrait.jpg" alt="Сергей Хвостенко (Sergey Hvostenko)" class="artist-portrait-img" />
+              <div class="artist-badge-pill">
+                <span class="status-dot"></span>
+                <span data-i18n="portraitRole">Художник · Мастер</span>
               </div>
+            </div>
+            <div class="artist-portrait-meta">
+              <div class="portrait-meta-title">
+                <strong data-i18n="portraitName">Сергей Хвостенко</strong>
+                <span class="portrait-loc" data-i18n="statusAvailable">Ашдод, Израиль</span>
+              </div>
+              <span class="portrait-sub" data-i18n="portraitCredentials">Специалист монументальной живописи (НАОМА) · Senior 3D & AI Artist</span>
             </div>
           </div>
 
@@ -663,7 +670,7 @@
     </div>
   </div>
 
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/app.js?v=2"></script>
 </body>
 </html>

@@ -16,6 +16,8 @@
       heroQuoteText:
         '«Искусство — это диалог со светом, пространством и временем, будь то мазок акрила на холсте или луч света в виртуальной архитектуре».',
       portraitName: 'Сергей Хвостенко',
+      portraitRole: 'Художник · Мастер',
+      statusAvailable: 'Ашдод, Израиль',
       portraitCredentials: 'Специалист монументальной живописи (НАОМА) · Senior 3D & AI Artist',
       aboutMiniSub: 'Род. 1 мая 1970 г. · Ашдод, Израиль',
       searchPlaceholder: 'Поиск по работам (например: Effy Kwina, облака, ZBrush)...',
@@ -152,6 +154,8 @@
       heroQuoteText:
         '“Art is a dialogue with light, space, and time—whether it is a brushstroke of acrylic on canvas or a ray of light inside virtual architecture.”',
       portraitName: 'Sergey Hvostenko',
+      portraitRole: 'Master Artist',
+      statusAvailable: 'Ashdod, Israel',
       portraitCredentials: 'Monumental Painting Specialist (NAOMA) · Senior 3D & AI Artist',
       aboutMiniSub: 'Born May 1, 1970 · Ashdod, Israel',
       searchPlaceholder: 'Search works (e.g., Effy Kwina, Clouds, ZBrush)...',
@@ -288,6 +292,8 @@
       heroQuoteText:
         '"אמנות היא דיאלוג עם אור, מרחב וזמן — בין אם במשיכת מכחול של אקריליק על קנבס ובין אם בקרן אור בתוך אדריכלות וירטואלית."',
       portraitName: 'סרגיי חבוסטנקו',
+      portraitRole: 'אמן ומאסטר',
+      statusAvailable: 'אשדוד, ישראל',
       portraitCredentials: 'מומחה לציור מונומנטלי (NAOMA) · אמן הדמיות 3D ו-AI בכיר',
       aboutMiniSub: 'נולד ב-1 במאי 1970 · אשדוד, ישראל',
       searchPlaceholder: 'חיפוש יצירות (למשל: אפי קווינה, עננים, ZBrush)...',
