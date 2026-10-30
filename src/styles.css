@@ -209,7 +209,7 @@ img {
   cursor: pointer;
   transition: all var(--transition);
   border: 1px solid transparent;
-  white-space: nowrap;
+  max-width: 100%;
 }
 
 .btn-sm {
@@ -1857,7 +1857,16 @@ img {
     max-width: 100%;
   }
 
+  .hero-visual {
+    order: 1;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+  }
+
   .hero-content {
+    order: 2;
     min-width: 0;
     width: 100%;
     max-width: 100%;
@@ -1944,13 +1953,6 @@ img {
     line-height: 1.25;
   }
 
-  .hero-visual {
-    min-width: 0;
-    width: 100%;
-    max-width: 100%;
-    gap: 12px;
-  }
-
   .artist-showcase {
     border-radius: var(--radius-md);
     border: 1px solid rgba(212, 175, 122, 0.28);
@@ -2015,21 +2017,23 @@ img {
 
   .strip-card {
     flex: unset;
-    height: 90px;
+    height: 105px;
     border-radius: var(--radius-sm);
   }
 
   .strip-card .bento-caption {
-    padding: 6px;
+    padding: 14px 6px 6px;
+    background: linear-gradient(to top, rgba(9, 10, 13, 0.95) 0%, rgba(9, 10, 13, 0.6) 70%, transparent 100%);
   }
 
   .strip-card .bento-tag {
     font-size: 0.58rem;
-    padding: 2px 5px;
+    padding: 1px 4px;
+    letter-spacing: 0.02em;
   }
 
   .strip-card strong {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2158,40 +2162,92 @@ img {
   }
 
   .contact-section {
-    padding: 48px 0 64px;
+    padding: 40px 0 56px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .contact-card {
-    padding: 24px 16px;
+    padding: 22px 14px;
     gap: 24px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .contact-desc {
     font-size: 0.94rem;
     margin-bottom: 20px;
+    word-break: break-word;
   }
 
   .contact-badges {
     grid-template-columns: 1fr;
     gap: 10px;
     margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .c-badge {
+    padding: 12px 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .c-badge strong {
+    font-size: 0.88rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .contact-channels-grid {
     grid-template-columns: 1fr;
     gap: 10px;
+    width: 100%;
   }
 
   .channel-card {
     padding: 12px 14px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .channel-info {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .channel-val {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .channel-action {
+    flex-shrink: 0;
+    margin-inline-start: auto;
   }
 
   .contact-form {
-    padding: 22px 16px;
+    padding: 20px 14px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .contact-form .btn-full {
+    padding: 14px 16px;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    white-space: normal;
+    text-align: center;
   }
 
   .form-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    word-break: break-word;
   }
 
   .feedback-quick-actions {
@@ -2294,22 +2350,29 @@ img {
   /* FOOTER ON MOBILE */
   .site-footer {
     padding: 28px 0;
+    width: 100%;
+    overflow: hidden;
   }
 
   .footer-inner {
     flex-direction: column;
     text-align: center;
     gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .footer-left {
     flex-direction: column;
     gap: 8px;
+    width: 100%;
   }
 
   .footer-copy {
     font-size: 0.78rem;
     line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .footer-channels {
