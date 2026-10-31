@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+
+Crawl-delay: 1
+
+Sitemap: https://sergey-hvostenko-website-ilyajavadevs-projects.vercel.app/sitemap.xml

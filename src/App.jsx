@@ -9,6 +9,7 @@ import Games from './components/Games';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Lightbox from './components/Lightbox';
+import AccessibilityWidget from './components/AccessibilityWidget';
 
 import { PORTFOLIO_WORKS } from './data/portfolioWorks';
 import { I18N } from './data/translations';
@@ -22,10 +23,45 @@ export default function App() {
   const isRtl = lang === 'he';
   const t = useMemo(() => I18N[lang] || I18N.ru, [lang]);
 
-  // Sync document language and direction
+  // Sync document language, direction, title and dynamic SEO meta tags
   useEffect(() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = isRtl ? 'rtl' : 'ltr';
+
+    const titles = {
+      ru: 'Сергей Хвостенко — Художник, Архитектурный 3D-визуализатор и Арт-директор | Портфолио',
+      en: 'Sergey Hvostenko — Fine Artist, Architectural 3D Visualizer & Art Director | Official Portfolio',
+      he: 'סרגיי חבוסטנקו — צייר, אמן הדמיות אדריכליות ב-3D וארט דירקטור | תיק עבודות רשמי'
+    };
+    const descriptions = {
+      ru: 'Официальное портфолио Сергея Хвостенко: академическая монументальная живопись (НАОМА), фотореалистичная архитектурная 3D-визуализация в Unreal Engine 5 и Lumion, скульптинг в ZBrush, концепт-арт для игр и AI-видео. Ашдод, Израиль.',
+      en: 'Official portfolio of Sergey Hvostenko: classical monumental fine art (NAOMA), photorealistic architectural 3D visualization in Unreal Engine 5 & Lumion, ZBrush character sculpting, game concept art & AI video motion. Ashdod, Israel.',
+      he: 'האתר ותיק העבודות הרשמי של סרגיי חבוסטנקו: ציור מונומנטלי אקדמי (NAOMA), הדמיות אדריכליות פוטוריאליסטיות ב-Unreal Engine 5 ו-Lumion, פיסול דמויות ב-ZBrush, קונספט ארט למשחקים ווידאו AI. אשדוד, ישראל.'
+    };
+
+    if (titles[lang]) {
+      document.title = titles[lang];
+    }
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && descriptions[lang]) {
+      metaDesc.setAttribute('content', descriptions[lang]);
+    }
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle && titles[lang]) {
+      ogTitle.setAttribute('content', titles[lang]);
+    }
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc && descriptions[lang]) {
+      ogDesc.setAttribute('content', descriptions[lang]);
+    }
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle && titles[lang]) {
+      twitterTitle.setAttribute('content', titles[lang]);
+    }
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc && descriptions[lang]) {
+      twitterDesc.setAttribute('content', descriptions[lang]);
+    }
   }, [lang, isRtl]);
 
   // Compute visible works pool
@@ -131,6 +167,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer t={t} />
+
+      {/* Accessibility Toolbar (WCAG 2.1 AA / IS 5568) */}
+      <AccessibilityWidget t={t} isRtl={isRtl} />
 
       {/* Lightbox Modal */}
       <Lightbox

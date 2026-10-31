@@ -134,7 +134,31 @@ export const I18N = {
       videoSpecs: '1920×1080 Full HD · 60fps · Unreal Engine 5 / AI Motion',
       footerCopy: '© Сергей Хвостенко (Sergey Hvostenko). Все права на художественные работы и 3D-визуализации защищены.',
       backToTop: 'Наверх ↑',
-      openOnFlickr: 'Открыть на Flickr'
+      openOnFlickr: 'Открыть на Flickr',
+
+      // Accessibility Menu (a11y)
+      a11yBtnLabel: 'Меню доступности (для людей с ограниченными возможностями)',
+      a11yTitle: 'Настройки доступности',
+      a11ySubtitle: 'Адаптация интерфейса в соответствии с WCAG 2.1 AA и стандартом IS 5568',
+      a11yTextSize: 'Размер шрифта',
+      a11yNormal: 'Обычный (A)',
+      a11yMedium: 'Увеличенный (A+)',
+      a11yLarge: 'Максимальный (A++)',
+      a11yHighContrast: 'Высокий контраст',
+      a11yHighContrastDesc: 'Контрастная тема с четкими золотыми и белыми контурами',
+      a11yGrayscale: 'Оттенки серого',
+      a11yGrayscaleDesc: 'Монохромный режим для снижения зрительного утомления',
+      a11yHighlightLinks: 'Подсветка ссылок',
+      a11yHighlightLinksDesc: 'Четкое подчеркивание и акцентное выделение всех ссылок',
+      a11yReadableFont: 'Легкочитаемый шрифт',
+      a11yReadableFontDesc: 'Четкий гротеск без засечек с комфортным межбуквенным интервалом',
+      a11yReduceMotion: 'Остановить анимации',
+      a11yReduceMotionDesc: 'Отключение бегущей строки, плавных сдвигов и фонового мерцания',
+      a11yBigCursor: 'Большой курсор',
+      a11yBigCursorDesc: 'Увеличенный высококонтрастный указатель мыши',
+      a11yReset: 'Сбросить настройки',
+      a11yClose: 'Закрыть',
+      a11yStatement: 'Сайт адаптирован для комфортного восприятия в соответствии со стандартом доступности WCAG 2.1 AA.'
     },
 
     en: {
@@ -272,7 +296,31 @@ export const I18N = {
       videoSpecs: '1920×1080 Full HD · 60fps · Unreal Engine 5 / AI Motion',
       footerCopy: '© Sergey Hvostenko. All rights to artworks and 3D visualizations reserved.',
       backToTop: 'Back to top ↑',
-      openOnFlickr: 'View Original on Flickr'
+      openOnFlickr: 'View Original on Flickr',
+
+      // Accessibility Menu (a11y)
+      a11yBtnLabel: 'Accessibility Menu (Universal Access)',
+      a11yTitle: 'Accessibility Options',
+      a11ySubtitle: 'Interface adjustments conforming to WCAG 2.1 AA and IS 5568',
+      a11yTextSize: 'Text Size',
+      a11yNormal: 'Normal (A)',
+      a11yMedium: 'Large (A+)',
+      a11yLarge: 'Extra Large (A++)',
+      a11yHighContrast: 'High Contrast',
+      a11yHighContrastDesc: 'High contrast theme with vivid gold and crisp outlines',
+      a11yGrayscale: 'Grayscale Mode',
+      a11yGrayscaleDesc: 'Monochrome view to reduce visual fatigue',
+      a11yHighlightLinks: 'Highlight Links',
+      a11yHighlightLinksDesc: 'Bold underline and vibrant highlight on all links and interactive items',
+      a11yReadableFont: 'Readable Font',
+      a11yReadableFontDesc: 'Clean sans-serif typeface with increased letter spacing',
+      a11yReduceMotion: 'Reduce Motion',
+      a11yReduceMotionDesc: 'Pause marquee ticker, ambient glows, and motion transitions',
+      a11yBigCursor: 'Large Cursor',
+      a11yBigCursorDesc: 'Enlarged high-visibility mouse pointer',
+      a11yReset: 'Reset Settings',
+      a11yClose: 'Close',
+      a11yStatement: 'This site conforms to WCAG 2.1 Level AA and Israeli IS 5568 accessibility standards.'
     },
 
     he: {
@@ -409,6 +457,30 @@ export const I18N = {
       videoSpecs: '1920×1080 Full HD · 60fps · Unreal Engine 5 / AI Motion',
       footerCopy: '© סרגיי חבוסטנקו (Sergey Hvostenko). כל הזכויות על היצירות וההדמיות שמורות.',
       backToTop: 'חזרה למעלה ↑',
-      openOnFlickr: 'צפייה במקור ב-Flickr'
+      openOnFlickr: 'צפייה במקור ב-Flickr',
+
+      // Accessibility Menu (a11y)
+      a11yBtnLabel: 'תפריט נגישות (התאמה למוגבלויות)',
+      a11yTitle: 'הגדרות נגישות',
+      a11ySubtitle: 'התאמת הממשק לתקן ישראלי ת"י 5568 ו-WCAG 2.1 AA',
+      a11yTextSize: 'גודל טקסט',
+      a11yNormal: 'רגיל (A)',
+      a11yMedium: 'מוגדל (A+)',
+      a11yLarge: 'גדול מאוד (A++)',
+      a11yHighContrast: 'ניגודיות גבוהה',
+      a11yHighContrastDesc: 'ערכת צבעים בניגודיות חדה עם גבולות מודגשים בזהב ולבן',
+      a11yGrayscale: 'גווני אפור',
+      a11yGrayscaleDesc: 'מצב מונוכרום להפחתת עומס ראייתי',
+      a11yHighlightLinks: 'הדגשת קישורים',
+      a11yHighlightLinksDesc: 'קו תחתי והדגשה בולטת לכל הקישורים והכפתורים',
+      a11yReadableFont: 'גופן קריא',
+      a11yReadableFontDesc: 'גופן ללא סריף עם ריווח אותיות מוגדל',
+      a11yReduceMotion: 'עצירת הנפשות',
+      a11yReduceMotionDesc: 'השבתת תנועה, טיקרים ומעברים דינמיים',
+      a11yBigCursor: 'סמן מוגדל',
+      a11yBigCursorDesc: 'סמן עכבר גדול וברור בעל ניגודיות גבוהה',
+      a11yReset: 'איפוס הגדרות',
+      a11yClose: 'סגור',
+      a11yStatement: 'האתר מותאם לתקנות הנגישות בתקן ישראלי ת"י 5568 ברמה AA.'
     }
   };
